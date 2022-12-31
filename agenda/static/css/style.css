@@ -1,0 +1,179 @@
+:root{
+    --font-main: LemonMilk;
+    --font-text: Coolvetica;
+}
+
+@font-face {
+    font-family: Coolvetica;
+    src: url('../fonts/coolvetica/coolvetica\ rg.otf');
+}
+
+@font-face {
+    font-family: LemonMilk;
+    src: url('../fonts/lemon_milk/LEMONMILK-Regular.otf');
+}
+
+h1,h2,h3,h4,h5,h6,a,button{
+    font-family: var(--font-main);
+}
+*{
+    font-family: var(--font-text);
+}
+/*
+:root{
+    --color-black: rgb(26, 26, 26);
+    --color-black-light: #777;
+    --color-yellow: #fbe334;
+    --color-yellow-light: rgb(255, 242, 146);
+    --color-text: #f5f5f5;
+    --font-main: LemonMilk;
+    --font-text: Coolvetica;
+}
+
+
+-- MAIN SETTINGS --
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    color: var(--color-text);
+}
+
+html{
+    background-color: var(--color-black);
+}
+
+
+-- LAYOUT --
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: var(--color-yellow);
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: var(--color-black);
+    text-transform: uppercase;
+    font-family: var(--font-main);
+    padding: 20px;
+}
+
+nav ul a:hover{
+    color: var(--color-black-light);
+}
+
+main{
+    display: flex;
+    margin: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-text);
+    width: 50%;
+    list-style-type: none;
+}
+
+.list li{
+    padding: 15px;
+    border-bottom: 1px solid var(--color-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.list li:last-of-type{
+    border: none;
+}
+
+.btn{
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+}
+
+.btn-detail{
+    background-color: white;
+    color: var(--color-black);
+}
+
+.btn-detail:hover{
+    background-color: rgb(219, 219, 219);
+    color: var(--color-black);
+}
+.btn-edit{
+    background-color: var(--color-yellow);
+    color: var(--color-black);
+}
+
+.btn-edit:hover{
+    background-color: var(--color-yellow-light);
+    color: var(--color-black);
+}
+
+.btn-delete{
+    background-color: rgb(218, 0, 0);
+    color: white;
+}
+
+.btn-delete:hover{
+    background-color: rgb(255, 50, 50);
+    color: white;
+}
+
+.search{
+    margin: 25px;
+    width: 50%;
+}
+
+.search-bar{
+    color: var(--color-black);
+    padding: 5px;
+    width: 80%;
+}
+
+.btn-search{
+    
+    width: 19%;
+    background-color: white;
+    color: var(--color-black);
+    outline: none;
+    border: 0;
+    box-shadow: 0;
+    cursor: pointer;
+}
+
+.btn-search:hover{
+    background-color: rgb(219, 219, 219);
+    color: var(--color-black);
+}
+
+.aux-btns{
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px
+}
+
+.aux-btns a{
+    padding-right: 10px;
+    text-decoration: none;
+}
+*/

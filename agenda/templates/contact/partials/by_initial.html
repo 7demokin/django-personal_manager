@@ -1,0 +1,5 @@
+<div class="d-lg-flex align-items-center justify-content-center mb-3">
+    {% for letter in letters %}
+    <a class="link-light m-2" href="{% url 'contact' letter=letter %}">{{ letter|upper }}</a>
+    {% endfor %}
+</div>

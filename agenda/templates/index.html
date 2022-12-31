@@ -1,0 +1,30 @@
+{% extends "layout/base.html" %}
+
+{% block "title" %}
+    Inicio
+{% endblock "title" %}
+{% block "content" %}
+    <h1>Bienvenido!</h1>
+    <div class="row w-100 d-flex justify-content-center">
+        <div class="col-lg-8">
+            <div class="row w-100">
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="link-light" href="{% url 'contact' %}">Contactos</a>
+                        </div>
+                        <div class="card-body">Gestiona tus contactos</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="link-light" href="{% url 'todo' %}">Tareas</a>
+                        </div>
+                        <div class="card-body">Gestiona tus tareas</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock "content" %}

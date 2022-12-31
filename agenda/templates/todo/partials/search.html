@@ -1,0 +1,15 @@
+<form class="w-100" action="{% url "todo" %}" method="get">
+    <div class="input-group mb-3">
+        <input class="form-control"
+               type="text"
+               name="search"
+               id="search"
+               placeholder="Buscar todoo"
+               value="{{ search }}"
+               aria-describedby="btn-search-submit"/>
+        <input class="btn btn-outline-light"
+               type="submit"
+               value="Buscar"
+               id="btn-search-submit"/>
+    </div>
+</form>

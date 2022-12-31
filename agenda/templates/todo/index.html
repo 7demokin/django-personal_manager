@@ -1,0 +1,29 @@
+{% extends "layout/base.html" %}
+
+{% block "title" %}
+    Contactos
+{% endblock "title" %}
+{% block "content" %}
+    <div class="row w-100 d-flex justify-content-center">
+        <div class="col-lg-8 p-0">
+            {% include "todo/partials/search.html" %}
+            <div class="mb-3 d-flex justify-content-between">
+                <a class="link-light text-decoration-none" href="{% url "todo" %}">Ver Todos</a>
+                <a class="link-success text-decoration-none" href="{% url "todo_create" %}">Añadir</a>
+            </div>
+            <div class="w-100">
+                {% for todo in todos %}
+                    <div class="mx-auto w-100 row p-3 border border-1 mb-3">
+                        <p class="col-lg-8">{{ todo.title }}</p>
+                        <div class="col-lg-4 d-flex justify-content-end">
+                            <a href="{% url 'todo_view' id=todo.id %}" class="btn btn-outline-light mx-2">Ver</a>
+                            <a href="{% url 'todo_edit' id=todo.id %}" class="btn btn-outline-warning mx-2">Editar</a>
+                            <a href="{% url 'todo_delete' id=todo.id %}" class="btn btn-outline-danger mx-2">Borrar</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+ 
+{% endblock "content" %}

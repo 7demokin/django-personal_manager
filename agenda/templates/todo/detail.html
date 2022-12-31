@@ -1,0 +1,24 @@
+{% extends "layout/base.html" %}
+
+{% block "title" %}
+    Contacto {{ todo.name }}
+{% endblock "title" %}
+{% block "content" %}
+    <div class="row w-100 d-flex justify-content-center">
+        <div class="col-lg-8">
+            <div class="mb-3 d-flex justify-content-between">
+                <a class="link-light text-decoration-none" href="{% url "todo" %}">< Volver</a>
+            </div>
+            <div class="border border-1 p-3">
+                <h1 class="fs-5 mt-3 mb-5 text-center">{{ todo.title }} {{ todo.last_name }}</h1>
+                <div class="row">
+                    <p class="col-md-6">Fecha: {{ todo.date }}</p>
+                    <p class="col-md-6">Final Estimado : {{ todo.estimated_end }}</p>
+                    <p class="col-md-6">Prioridad (1-5): {{ todo.priority }}</p>
+                </div>
+                <p>{{ todo.description }}</p>
+            </div>
+        </div>
+    </div>
+ 
+{% endblock "content" %}
